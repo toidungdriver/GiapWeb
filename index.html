@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo3.png">
+    <meta name="description" content="Mun Vape - Cửa hàng vape chính hãng">
     <title>Mun Vape</title>
     <style>
         body {
@@ -16,7 +18,7 @@
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             padding: 10px 50px;
             background: #2a0314;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -31,11 +33,6 @@
         }
         .logo img {
             width: 200px;
-        }
-        .seller-name {
-            font-size: 22px;
-            color: white;
-            font-style: italic;
         }
         .menu {
             display: flex;
@@ -53,10 +50,25 @@
             padding: 20px;
             text-align: center;
         }
+        .banner-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
         .banner {
             width: 100%;
             border-radius: 10px;
             margin-bottom: 20px;
+        }
+        .price-tag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 5px;
         }
         .products {
             display: grid;
@@ -93,37 +105,39 @@
     <div class="header">
         <div class="logo">
             <img src="logo1.png" alt="Logo">
-            <span class="seller-name">Phan Công Hưng</span>
         </div>
         <nav class="menu">
             <a href="https://www.facebook.com/share/19jjtPZPLk/?mibextid=wwXIfr">Facebook</a>
-            <a href="https://www.tiktok.com/@munvp6868?_r=1&_d=secCgYIASAHKAESPgo8edsOm1PK2g%2B6X%2FASZWHrYN6T4hrHxUlKB8s6J5jmCpxRqWK48hQJI6Jq%2F76ZRQYSUleM9m65WKS2YOiAGgA%3D&_svg=1&checksum=885516030ef5faac4a4e7d4e5922ae5c28925b2f52393f19fdfb60bc1f9fe18c&sec_uid=MS4wLjABAAAAUJcM9ouElH5NN5vkuUYyH5uwq1XOSqLn75dY-iKHC539wT0gHv0gGNWlI0nCLCB1&sec_user_id=MS4wLjABAAAAUJcM9ouElH5NN5vkuUYyH5uwq1XOSqLn75dY-iKHC539wT0gHv0gGNWlI0nCLCB1&share_app_id=1180&share_author_id=7040755509574583297&share_link_id=97B5DF1E-37AE-409D-AAAF-C40C1861F030&sharer_language=vi&social_share_type=4&source=h5_t&timestamp=1742062185&tt_from=copy&u_code=dm6age882f88d6&ug_btm=b8727%2Cb0&user_id=7040755509574583297&utm_campaign=client_share&utm_medium=ios&utm_source=copy">Tiktok </a>
+            <a href="https://www.tiktok.com/@munvp6868">Tiktok</a>
             <a href="#">010-8088-3952</a>
         </nav>
     </div>
     
     <div class="container">
-        <img class="banner" src="background.png" alt="Ảnh lớn dưới logo">
+        <div class="banner-container">
+            <div class="price-tag">Giá: 85kw</div>
+            <img class="banner" src="background.png" alt="Ảnh lớn dưới logo">
+        </div>
+        <div class="banner-container">
+            <div class="price-tag">Giá: 80kw</div>
+            <img class="banner" src="anh1.png" alt="Ảnh lớn dưới logo">
+        </div>
         <div class="products">
             <div class="product">
                 <img src="sp1.png" alt="Sản phẩm 1">
-                <h2>Sản Phẩm 1</h2>
-                <p>Giá: 100,000đ / 1 đầu</p>
+                <h2>Đầu xlim</h2>
+                <p>10kw/ đầu <br>
+                26kw/pack 3 đầu</p>
             </div>
             <div class="product">
                 <img src="sp2.png" alt="Sản phẩm 2">
-                <h2>Sản Phẩm 2</h2>
-                <p>Giá: 200,000đ / 1 lọ</p>
+                <h2>Juice Emoji</h2>
+                <p>30kw/lọ</p>
             </div>
             <div class="product">
                 <img src="sp3.png" alt="Sản phẩm 3">
-                <h2>Sản Phẩm 3</h2>
-                <p>Giá: 300,000đ / 1 lọ</p>
-            </div>
-            <div class="product">
-                <img src="sp4.png" alt="Sản phẩm 4">
-                <h2>Sản Phẩm 4</h2>
-                <p>Giá: 400,000đ / 1 lọ</p>
+                <h2>Juice Caballo</h2>
+                <p>30kw/lọ</p>
             </div>
         </div>
     </div>
